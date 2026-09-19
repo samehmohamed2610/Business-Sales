@@ -1,120 +1,253 @@
-## 📊 Project Overview
+📊 Business Performance Dashboard
 
-This project is a professional **Business Performance Dashboard** built with **Microsoft Power BI** to provide a clear overview of sales performance, customer activity, retention, customer value, and business growth.
+An end-to-end Business Intelligence and Analytics project built with Power BI to analyze sales performance, customer activity, retention & churn, customer value, and business growth through an interactive executive dashboard.
 
-The dashboard transforms raw business data into interactive KPIs and visual insights that help users monitor performance and compare current results with previous periods.
+Developed by: Sameh Mohamed
 
----
 
-## 🎯 Project Objectives
 
-The main objectives of the dashboard are to:
 
-- Monitor overall sales performance.
-- Track customer activity and growth.
-- Analyze customer retention and churn.
-- Measure customer value and purchasing behavior.
-- Compare current performance with previous periods.
-- Identify monthly and seasonal sales trends.
-- Provide an interactive executive-level overview of business performance.
 
----
 
-## 🗂️ Dashboard Sections
 
-The dashboard covers the following analytical areas:
+📌 Overview
 
-### 1. Sales Performance
-- Total Sales
-- MTD Sales
-- QTD Sales
-- YTD Sales
-- Previous YTD (PYTD)
-- YOY Growth
-- MOM Growth
-- 4-Month Rolling Sales
+Most business dashboards focus on a single KPI or a single department. This project brings multiple business perspectives together in one interactive Power BI report.
 
-### 2. Customer Activity
-- Active Customers
-- Previous Month Active Customers
-- Customer Growth Rate
+The dashboard provides a centralized view of:
 
-### 3. Retention & Churn
-- Churn Rate
-- Customer Growth Rate
+Sales performance
 
-### 4. Customer Value
-- Average Customer Lifespan (ACL)
-- Average Purchase Frequency (APF)
-- Average Purchase Value (APV)
-- Average Revenue Per Customer (ARPC)
-- Customer Lifetime Value (CLV)
+Customer activity
 
-### 5. Growth & Trend Analysis
-- YOY Sales Growth
-- MOM Sales Growth
-- Monthly Sales Trend
-- 4-Month Rolling Sales Trend
-- Previous Year comparisons
+Orders performance
 
----
+Retention and churn
 
-## 🔄 Data Preparation Workflow
+Customer value
 
-The project follows a structured data preparation process:
+Growth trends
 
-**Raw Data → Data Profiling → Cleaning → Transformation → Normalization → Data Modeling → DAX Measures → Dashboard**
+Monthly and yearly comparisons
 
-### 1. Data Collection
-The source data is imported into Power BI for analysis.
+Rolling sales performance
 
-### 2. Data Profiling
-The data is reviewed to understand:
-- Columns and data types
-- Missing values
-- Duplicate records
-- Invalid values
-- Relationships between business entities
-- Date fields and transaction fields
+The project follows an end-to-end analytics workflow, starting from raw business data and continuing through data cleaning, transformation, normalization, data modeling, DAX development, visualization, and final dashboard design.
 
-### 3. Data Cleaning
-Power Query is used to:
-- Remove unnecessary columns.
-- Handle missing and null values.
-- Remove duplicate records where appropriate.
-- Correct data types.
-- Standardize values and formats.
-- Validate dates and numeric fields.
+⚙️ Data Preparation & Modeling
 
-### 4. Transformation & Normalization
-The data is transformed into an analytical structure that separates business entities and transaction information.
+A. Data Profiling
 
-Typical dimensions include:
-- Customer
-- Product
-- Date
-- Other relevant business dimensions
+The source data was reviewed before building the analytical model.
 
-The transactional data is kept as the central fact table.
+The profiling process focused on:
 
-### 5. Data Modeling
-A structured relational model is created in Power BI, following a **star-schema approach** where possible.
+Understanding available tables and columns
 
-The model separates:
-- **Fact tables:** transactional/business events.
-- **Dimension tables:** descriptive attributes used for filtering and analysis.
+Identifying data types
 
-A dedicated Date dimension is used for time intelligence calculations.
+Checking missing and null values
 
----
+Detecting duplicate records
 
-## 🧮 DAX Measures
+Reviewing date and transaction fields
 
-The dashboard uses DAX measures for KPI calculations and time-based analysis.
+Understanding relationships between business entities
 
-### Main Measures
+Identifying fields required for KPI calculations
 
-```text
+B. Transformation and Cleaning — Power Query
+
+Power Query was used to prepare the raw data for analysis.
+
+Step
+
+What it does
+
+Data Type Validation
+
+Ensures numeric, text, and date fields use the correct data types
+
+Missing Values
+
+Identifies and handles blanks where required
+
+Duplicate Checks
+
+Reviews duplicate records and maintains data consistency
+
+Column Filtering
+
+Removes unnecessary fields to keep the model focused
+
+Data Transformation
+
+Reshapes and prepares source data for analytical modeling
+
+Standardization
+
+Keeps values and formats consistent across the model
+
+C. Normalization
+
+The raw business data was transformed into a structured analytical format.
+
+Business entities and transactional information were separated where appropriate to support a cleaner model and more flexible analysis.
+
+The final structure follows a star-schema approach, with transactional data supported by descriptive dimensions.
+
+This structure improves:
+
+Filtering
+
+Relationships
+
+DAX calculations
+
+Time intelligence
+
+Dashboard performance
+
+Analytical flexibility
+
+D. Data Modeling
+
+A dedicated Date dimension was used to support time-based analysis.
+
+The model was designed to support calculations such as:
+
+Monthly performance
+
+MTD
+
+QTD
+
+YTD
+
+PYTD
+
+YOY Growth
+
+MOM Growth
+
+4-Month Rolling Sales
+
+📊 Dashboard Features
+
+The report uses a dark professional theme with custom KPI cards, turquoise accents, interactive filters, and SVG-based visual elements.
+
+💰 Sales Performance
+
+Tracks the main sales KPIs and period comparisons.
+
+Includes:
+
+Total Sales
+
+MTD Sales
+
+QTD Sales
+
+YTD Sales
+
+PYTD
+
+YOY Growth
+
+MOM Growth
+
+4-Month Rolling Sales
+
+The Sales Performance section provides a quick view of current performance and how it compares with previous periods.
+
+📈 Sales Trend
+
+A monthly sales trend visual compares:
+
+Total Sales
+
+4-Month Rolling Sales
+
+The rolling measure helps provide a smoother view of the underlying sales trend and reduces the impact of short-term fluctuations.
+
+👥 Customer Activity
+
+Monitors changes in the active customer base.
+
+Includes:
+
+Active Customers
+
+Previous Month Active Customers
+
+Customer Growth Rate
+
+Monthly Customer Growth
+
+This section helps identify whether customer activity is increasing or declining over time.
+
+🛒 Orders Performance
+
+Provides a view of overall transaction activity through:
+
+Total Orders
+
+Order Volume
+
+Orders are analyzed alongside sales performance to provide additional context around business activity.
+
+🔄 Retention & Churn
+
+Analyzes customer retention and churn behavior.
+
+Includes:
+
+Churn Rate
+
+Customer Growth
+
+Customer Retention
+
+Dynamic growth indicators highlight positive and negative changes in customer activity.
+
+💎 Customer Value
+
+Measures the economic value and purchasing behavior of customers.
+
+Key metrics include:
+
+KPI
+
+Description
+
+ACL
+
+Average Customer Lifespan
+
+APF
+
+Average Purchase Frequency
+
+APV
+
+Average Purchase Value
+
+ARPC
+
+Average Revenue Per Customer
+
+CLV
+
+Customer Lifetime Value
+
+These metrics provide a deeper understanding of customer contribution and long-term value.
+
+🧮 DAX & Time Intelligence
+
+DAX was used to create dynamic KPIs and period-based calculations.
+
+Main measures include:
+
 [Total Sales]
 [Total Order]
 [Active Customers]
@@ -134,21 +267,9 @@ The dashboard uses DAX measures for KPI calculations and time-based analysis.
 [ARPC]
 [CLV]
 
-The existing DAX measure names and calculation logic are preserved. The dashboard design focuses on presenting these measures clearly through KPI cards and interactive visuals.
+The measures dynamically respond to the selected date and dashboard filters.
 
-📈 Time Intelligence
-
-The dashboard uses a dedicated Date table to support period comparisons and time-based calculations such as:
-
-Month-to-Date (MTD)
-Quarter-to-Date (QTD)
-Year-to-Date (YTD)
-Previous Year-to-Date (PYTD)
-Year-over-Year (YOY)
-Month-over-Month (MOM)
-Rolling-period analysis
-
-Example:
+Example time-intelligence calculation:
 
 PYTD =
 CALCULATE(
@@ -156,111 +277,190 @@ CALCULATE(
     SAMEPERIODLASTYEAR(Dim_date[Date])
 )
 
-📊 Main Visuals
+🎨 Dashboard Design
 
-The dashboard includes visualizations such as:
+The dashboard was designed with a modern dark executive-style interface.
 
-KPI cards
-Sales trend line chart
-Rolling sales trend
-Customer KPI cards
-Retention & churn KPIs
-Customer value KPIs
-Growth indicators
-Time-period comparison cards
+Design Features
+
+Dark teal background
+
+Turquoise borders and accents
+
+Green positive-growth indicators
+
+Red negative-growth indicators
+
+Custom SVG KPI cards
+
+Structured section headers
+
 Interactive slicers
-🔍 Business Questions Answered
+
+Consistent spacing and alignment
+
+Clear KPI hierarchy
+
+Responsive visual storytelling
+
+Custom SVG visuals were used to create flexible KPI cards while keeping the existing DAX measures and business logic intact.
+
+🛠️ Tools and Technologies
+
+Tool / Technology
+
+Purpose
+
+Power BI
+
+Data modeling, visualization, and dashboard development
+
+Power Query
+
+Data cleaning and transformation
+
+DAX
+
+KPI calculations and time intelligence
+
+Star Schema
+
+Analytical data modeling
+
+Date Dimension
+
+Time-based analysis
+
+SVG
+
+Custom KPI card visuals
+
+Data Visualization
+
+Business insight presentation
+
+📂 Repository Structure
+
+Business-Performance-Dashboard/
+│
+├── screenshots/
+│   ├── dashboard-overview.png
+│   ├── dashboard-filtered-1.png
+│   └── dashboard-filtered-2.png
+│
+├── Business_Performance_Dashboard.pbix
+│
+├── README.md
+│
+└── Documentation/
+    └── Dashboard_Documentation.pdf
+
+▶️ How to Use
+
+1. Clone the repository
+
+git clone https://github.com/samehmohamed2610/Business-Performance-Dashboard.git
+
+2. Install Power BI Desktop
+
+Download and install Power BI Desktop.
+
+3. Open the PBIX file
+
+Open:
+
+Business_Performance_Dashboard.pbix
+
+4. Refresh the data
+
+If the source data is included separately, update the data-source path from:
+
+Home → Transform data → Data source settings
+
+Then refresh the report.
+
+5. Explore the dashboard
+
+Use the available slicers and filters to analyze different periods and compare business performance dynamically.
+
+Note: Dashboard values may change depending on the selected filters and the underlying source data.
+
+💡 Business Questions Answered
 
 The dashboard helps answer questions such as:
 
-What are the current total sales?
-How are sales performing compared with the previous year?
-How are sales changing month over month?
-What are the current MTD, QTD, and YTD sales?
-How many active customers do we have?
-How has the active customer base changed?
+How are total sales performing?
+
+How does current sales compare with previous periods?
+
+Is sales growth positive or negative?
+
+How many active customers do we currently have?
+
+How is the customer base changing?
+
 What is the current churn rate?
-What is the customer growth rate?
-How frequently do customers purchase?
+
+How many orders were generated?
+
 What is the average purchase value?
-How much revenue does each customer generate?
+
+How frequently do customers purchase?
+
+How much revenue is generated per customer?
+
 What is the estimated customer lifetime value?
-What is the current monthly sales trend?
-Is current performance improving compared with previous periods?
-🛠️ Tools & Technologies
-Microsoft Power BI
-Power Query
-DAX
-Data Modeling
-SVG
-Star Schema
-Time Intelligence
-🚀 Project Workflow
-1. Import Raw Data
-        ↓
-2. Profile the Data
-        ↓
-3. Clean the Data
-        ↓
-4. Transform & Normalize
-        ↓
-5. Build Data Model
-        ↓
-6. Create Date Dimension
-        ↓
-7. Create DAX Measures
-        ↓
-8. Build KPI Cards
-        ↓
-9. Build Charts & Slicers
-        ↓
-10. Apply Dashboard Theme
-        ↓
-11. Validate KPIs
-        ↓
-12. Final Dashboard
-✅ Data Validation
 
-Before finalizing the dashboard, KPI results should be validated against the underlying data.
+What is the monthly sales trend?
 
-Validation areas include:
+How does rolling sales performance compare with monthly sales?
 
-Total sales reconciliation
-Order count reconciliation
-Customer count validation
-Date filtering validation
-Previous-period comparison validation
-YOY and MOM calculation validation
-Churn calculation validation
-Customer value KPI validation
-📁 Recommended Project Structure
-Business-Performance-Dashboard/
-│
-├── README.md
-├── PowerBI/
-│   └── Business_Performance_Dashboard.pbix
-│
-├── Data/
-│   └── Source_Data/
-│
-├── Documentation/
-│   └── Dashboard_Documentation.pdf
-│
-└── Screenshots/
-    └── Dashboard.png
-📌 Key Takeaway
+🚀 Future Improvements
 
-This project demonstrates an end-to-end Power BI workflow, starting from raw business data and progressing through data cleaning, transformation, normalization, data modeling, DAX development, time intelligence, interactive visualization, and professional dashboard design.
+🔮 Predictive Sales Forecasting
 
-The final dashboard provides a centralized view of sales, customers, retention, customer value, and growth, making complex business data easier to understand and monitor.
+Develop predictive models to estimate future sales and identify expected growth patterns.
 
-👤 Author Sameh Mohamed Elaraby
+👤 Customer Churn Prediction
 
-Business Performance Dashboard – Power BI Project
+Use machine-learning models to identify customers with a higher probability of churn.
 
-Built using Microsoft Power BI, Power Query, DAX, Data Modeling, and SVG-based custom visuals.
-"""
+🎯 Customer Segmentation
 
-path = Path("/mnt/data/README.md")
-path.write_text(readme, encoding="utf-8")
-print(f"Created: {path}")
+Apply RFM analysis and clustering to group customers according to purchasing behavior and value.
+
+⚡ Automated KPI Alerts
+
+Integrate Power BI with Power Automate to trigger notifications when important KPIs reach predefined thresholds.
+
+🧪 What-If Analysis
+
+Introduce scenario parameters to simulate changes in sales, customer growth, retention, and other business drivers.
+
+💎 Advanced CLV Forecasting
+
+Extend the current CLV analysis with predictive customer behavior and long-term revenue forecasting.
+
+🔎 Drillthrough Analysis
+
+Add deeper drillthrough pages for customer, product, order, and transaction-level analysis.
+
+📌 Final Outcome
+
+The final solution provides a centralized Business Performance Dashboard that combines sales, customers, orders, retention, customer value, and growth analysis in one interactive reporting environment.
+
+The project demonstrates an end-to-end Power BI workflow:
+
+Data Preparation → Data Modeling → DAX → Time Intelligence → Visualization → Custom SVG Design → Interactive Dashboard
+
+The result is a professional analytical solution that transforms raw business data into clear, interactive, and actionable business insights.
+
+👤 Author
+
+Sameh Mohamed
+
+Power BI & Data Analytics
+
+🔗 GitHub: @samehmohamed2610
+
+⭐ If you find this project useful, feel free to explore the repository and give it a star.
